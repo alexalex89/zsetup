@@ -134,3 +134,7 @@ alias gi="~/workspace_python/get_ip/get_ip.py"
 alias giv="gi --va"
 alias gih="gi --host"
 alias gis="gi --search"
+
+venv-enter() {
+    bash -c "source $1/bin/activate; exec zsh"
+}
