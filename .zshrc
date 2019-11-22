@@ -130,3 +130,7 @@ if [ -n "$SSH_TTY" -a -S "$SSH_AUTH_SOCK" ]; then
     esac
 fi
 
+alias gi="~/workspace_python/get_ip/get_ip.py"
+alias giv="gi --va"
+alias gih="gi --host"
+alias gis="gi --search"
