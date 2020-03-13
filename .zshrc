@@ -32,9 +32,6 @@ if type kubectl >/dev/null; then
     alias koff=kubeoff
     fpath=(${ZDOTDIR}/completion $fpath)
     compinit
-    source ${ZDOTDIR}/kube-ps1/kube-ps1.sh
-    LP_PS1_PREFIX='$(kube_ps1)'
-    kubeoff
 fi
 
 # zsh does not want '/' in WORDCHARS (no idea why it is in there in the first place)
