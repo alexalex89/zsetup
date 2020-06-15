@@ -24,6 +24,7 @@ compinit
 # enable kubectl completion
 if type kubectl >/dev/null; then
     source <(kubectl completion zsh)
+    source <(helm completion zsh)
     alias k=kubectl
     export KUBECTX_CURRENT_BGCOLOR="$(tput setab 7)"
     alias kctx=${ZDOTDIR}/kubectx/kubectx
